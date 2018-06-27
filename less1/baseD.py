@@ -38,4 +38,4 @@ if __name__ == "__main__":
 
     print(name.name)
     print(age.getAge())
-    print(age.age)
+    print(age.__age)
