@@ -8,8 +8,10 @@ try:
 
 
     x = {}
-    x['value'] = 100
+    # x['value'] = 100
     print(x['value'])
+
+
 except KeyError:
     print('key error')
 except TypeError:
@@ -18,3 +20,5 @@ else:
     print('no error')
 finally:
     print('end the end')
+
+print('bye')
