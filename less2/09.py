@@ -7,7 +7,7 @@ class MyException(Exception):
         print('class function')
 
     def __str__(self):
-        return super().__str__() + 'extra:' + str(self.extra_text)
+        return super().__str__() + 'add_files:' + str(self.extra_text)
 
 def ggg():
     try:
