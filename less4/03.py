@@ -30,8 +30,12 @@
 
 class MyMeta(type):
     def __init__(cls, name, bases, attrs):
+        print(cls)
+        print(name)
+        print(bases)
+        print(attrs)
         super().__init__(name, bases, attrs)
-        cls.f = lambda self: 'hello'
+        cls.f = lambda self: 'hello' + str(self.a)
 
 
 class A1(metaclass=MyMeta):

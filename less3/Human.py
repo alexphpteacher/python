@@ -1,4 +1,4 @@
-class Human:
+lass Human:
     def __init__(self, name, age, weight, height):
         if type(name) == str:
             self.name = name

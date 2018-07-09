@@ -3,6 +3,9 @@ class A1:
     def f(self):
         print('f call ' + str(A1.ff))
 
+    def pp(self):
+        print('pp called from A1')
+
 a1 = A1()
 
 A1.f(A1)
@@ -15,13 +18,18 @@ class Meta(type):
     def g(cls):
         print('g call ' + str(cls.gg))
 
+    def pp(self):
+        print('pp called from Meta')
+
 class A2(A1, metaclass=Meta):
+    gg = 12
     pass
 
 a2 = A2()
 
 a2.f()
 A2.f(A2)
+A2.pp(A2)
 A2.g()
 Meta.g(Meta)
 

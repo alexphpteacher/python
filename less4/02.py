@@ -17,11 +17,21 @@ def my_meta(classname, bases, attrs):
 
 class A2(metaclass=my_meta):
     def f(self):
-        print('heelo')
+        print('hello')
 
 a = A2(name = 'alexey', age = 23, phone = '555-789-44-66')
 
 print(vars(a))
 print(a.say())
 
-a.f()
+print(a.f(10))
+print('=' * 50)
+
+print(A1.i)
+print(A2.i)
+A1.i +=1
+
+print(A1.i)
+print(A2.i)
+
+A3 = A2

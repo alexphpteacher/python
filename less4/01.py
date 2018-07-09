@@ -17,6 +17,8 @@ class A1:
 a1 = A1(name = 'alex', age = 12)
 
 print(vars(a1))
+print('=' * 60)
+
 
 def my_say(cls):
     return cls.i
@@ -34,7 +36,8 @@ A2 = type('MyClass',(object,), {
 
 a2 = A2(name = 'alex', age = 12)
 
-print(vars(a1))
+print(vars(a2))
+print('=' * 60)
 
 print(A1.say())
 print(A2.say())
